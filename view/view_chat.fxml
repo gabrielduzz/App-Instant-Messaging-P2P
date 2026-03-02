@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1200.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tela%20chat.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelNomeGrupo" layoutX="509.0" layoutY="148.0" prefHeight="26.0" prefWidth="155.0" text="Nome do Grupo" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="botaoEnviar" fitHeight="118.0" fitWidth="45.0" layoutX="672.0" layoutY="639.0" onMouseClicked="#enviar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/botao%20enviar.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="botaoSair" fitHeight="35.0" fitWidth="31.0" layoutX="704.0" layoutY="147.0" onMouseClicked="#sair" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/sair.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="campoDeTextoMensagem" layoutX="484.0" layoutY="643.0" prefHeight="40.0" prefWidth="177.0" />
+      <ScrollPane fx:id="scrollPaneMensagens" layoutX="460.0" layoutY="192.0" prefHeight="432.0" prefWidth="279.0" stylesheets="@styles.css">
+         <content>
+            <VBox fx:id="vboxMensagens" prefHeight="430.0" prefWidth="276.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="botaoVoltar" fitHeight="18.0" fitWidth="25.0" layoutX="474.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/botao%20voltar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
